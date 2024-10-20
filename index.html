@@ -206,11 +206,66 @@
         background-color: #f0f0f0;
     }
 
-    
+    @media (max-width: 768px) {
+        body {
+            height: auto;
+        }
+
+        .header {
+            flex-direction: column;
+            padding: 10px 20px;
+        }
+
+        .navbar {
+            flex-direction: column;
+            position: relative;
+            left: 0;
+            transform: none;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .navbar li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .navbar li:not(:last-child)::after {
+            content: none;
+        }
+
+        .left img {
+            height: 2em;
+        }
+
+        .right {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .center-box {
+            width: 90%;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .center-box h1 {
+            font-size: 20px;
+        }
+
+        .form-group input {
+            padding: 8px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+        }
+    }
 </style>
 
 <body>
-    
+
     <header class="header">
         <div class="left">
 
