@@ -209,6 +209,7 @@
     @media (max-width: 768px) {
         body {
             height: auto;
+            background-attachment: scroll;
         }
 
         .header {
@@ -216,10 +217,17 @@
             padding: 10px 20px;
         }
 
+        .left,
+        .mid,
+        .right {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0;
+        }
+
         .navbar {
             flex-direction: column;
-            position: relative;
-            left: 0;
+            position: static;
             transform: none;
             font-size: 1rem;
             margin-top: 10px;
@@ -238,14 +246,26 @@
             height: 2em;
         }
 
+        .logo-text {
+            margin-top: 5px;
+        }
+
         .right {
             margin-top: 10px;
-            text-align: center;
+        }
+
+        .right a {
+            display: block;
+            margin: 5px 0;
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 5px;
         }
 
         .center-box {
             width: 90%;
-            margin-top: 20px;
+            max-width: 400px;
+            margin: 20px auto;
             padding: 20px;
         }
 
@@ -254,12 +274,14 @@
         }
 
         .form-group input {
-            padding: 8px;
+            padding: 12px;
+            font-size: 16px;
         }
 
         .btn {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
+            font-size: 16px;
         }
     }
 </style>
